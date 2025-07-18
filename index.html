@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>삼반네컷</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet"></head>
+<body>
+  <h1>📸 삼반네컷 포토부스</h1>
+
+  <div id="camera-section">
+    <video id="video" autoplay playsinline></video>
+    <div id="countdown"></div>
+    <button id="startBtn">📷 촬영 시작</button>
+  </div>
+
+  <div id="final-output" style="display: none;">
+    <div id="capture-area">
+        <div class="final-photo"><img id="img1"></div>
+        <div class="final-photo"><img id="img2"></div>
+        <div class="final-photo"><img id="img3"></div>
+        <div class="final-photo"><img id="img4"></div>
+        <div id="footer">삼반네컷</div>
+    </div>
+
+    <div id="action-buttons" style="display: none;">
+        <button id="retryBtn">🔄 재촬영</button>
+        <button id="downloadBtn">⬇️ 다운로드</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
